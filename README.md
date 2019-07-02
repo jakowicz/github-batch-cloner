@@ -7,7 +7,7 @@ This is a simple set of Node and Bash scripts to locate all repositories witinh 
 This will create a file called \<github-handle\>-repos.txt, containing a list of all repositories SSH urls.
 
 ```
-# Assuming a Github organisation name of user handle of netflix
+# Assuming a Github organisation or user handle of netflix
 ./fetch-repos.js netflix
 ```
 
@@ -26,7 +26,7 @@ git@github.com:netflix/chaosmonkey.git
 This will read a file created in step one, base on the Github handle provided and clone all repositories into a the repos/\<github-handle\> folder.
 
 ```
-# Assuming a Github organisation name of user handle of netflix
+# Assuming a Github organisation or user handle of netflix
 ./clone.sh netflix
 ```
 
@@ -35,6 +35,6 @@ This will read a file created in step one, base on the Github handle provided an
 This will loop through each directory in the repos/\<github-handle\> folder and perform a git pull
 
 ```
-# Assuming a Github organisation name of user handle of netflix
+# Assuming a Github organisation or user handle of netflix
 ./pull.sh netflix
 ```
