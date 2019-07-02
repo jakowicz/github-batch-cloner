@@ -1,6 +1,6 @@
 # Github Batch Cloner
 
-This is a simple set of Node scripts to locate all repositories with an organisation and clone them and then later being able to pull the most recent changes from the HEAD.
+This is a simple set of Node and Bash scripts to locate all repositories witinh an organisation and clone them and then later being able to batch pull the most recent changes from the HEAD of each repository.
 
 ## Step 1 - Find list of organisation or user repositories
 
@@ -27,7 +27,7 @@ This will read a file created in step one, base on the Github handle provided an
 
 ```
 # Assuming a Github organisation name of user handle of netflix
-./clone.js netflix
+./clone.sh netflix
 ```
 
 ## Step 3 - Pull all the latest changes from HEAD for each repo in the repos/\<github-handle\> folder
@@ -36,5 +36,5 @@ This will loop through each directory in the repos/\<github-handle\> folder and 
 
 ```
 # Assuming a Github organisation name of user handle of netflix
-./pull.js netflix
+./pull.sh netflix
 ```

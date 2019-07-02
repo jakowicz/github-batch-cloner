@@ -4,12 +4,12 @@ const octokit = new Octokit();
 
 org = process.argv[2];
 
-if(org == undefined) {
+if (org == undefined) {
   throw "Define an org"
 }
 
 octokit.paginate('GET /orgs/' + org + '/repos', (response, done) => {
-  for(a in response.data) {
+  for (a in response.data) {
     fs.appendFile(org + '-repos.txt', response.data[a]["ssh_url"] + "\n", () => {});
   }
 });

@@ -1,0 +1,29 @@
+{
+  "name": "github-batch-cloner",
+  "version": "1.0.0",
+  "description": "This is a simple set of Node and Bash scripts to locate all repositories witinh an organisation and clone them and then later being able to batch pull the most recent changes from the HEAD of each repository.",
+  "main": "fetch-repos.js",
+  "dependencies": {
+    "@octokit/rest": "^16.28.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakowicz/github-batch-cloner.git"
+  },
+  "keywords": [
+    "github",
+    "batch",
+    "cloner",
+    "clone"
+  ],
+  "author": "Simon Jakowicz",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/jakowicz/github-batch-cloner/issues"
+  },
+  "homepage": "https://github.com/jakowicz/github-batch-cloner#readme"
+}
