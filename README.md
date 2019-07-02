@@ -11,7 +11,7 @@ This will create a file called \<github-handle\>-repos.txt, containing a list of
 ./fetch-repos.js netflix
 ```
 
-### Example output
+### Example file output e.g. netflix-repos.txt
 
 ```
 git@github.com:netflix/zuul.git
